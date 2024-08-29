@@ -1,0 +1,17 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": 5434,
+    "username": "postgres",
+    "password": "doha",
+    "database": "port",
+    "synchronize": false,
+    "logging": false,
+    "entities": ["src/entities/**/*.ts"],
+    "migrations": ["src/migrations/**/*.ts"],
+    "cli": {
+      "entitiesDir": "src/entities",
+      "migrationsDir": "src/migrations"
+    }
+  }
+  

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                                // Spécifie la version ECMAScript cible (ES6).
+    "module": "commonjs",                           // Utilise le module CommonJS pour Node.js.
+    "strict": true,                                 // Active toutes les vérifications strictes de TypeScript.
+    "esModuleInterop": true,                        // Assure la compatibilité avec les modules ES.
+    "experimentalDecorators": true,                 // Active les décorateurs, nécessaires pour TypeORM.
+    "emitDecoratorMetadata": true,                  // Émet les métadonnées pour les décorateurs (nécessaire pour TypeORM).
+    "skipLibCheck": true,                           // Ignore la vérification des fichiers de définition de type.
+    "forceConsistentCasingInFileNames": true,       // Force la casse des noms de fichiers à être cohérente.
+    "outDir": "./dist",                             // Spécifie le dossier de sortie des fichiers compilés.
+    "rootDir": "./src",                             // Spécifie le dossier racine pour la compilation.
+    "resolveJsonModule": true,                      // Permet l'importation de fichiers JSON.
+    "moduleResolution": "node",                     // Spécifie la stratégie de résolution de module.
+    "typeRoots": ["./node_modules/@types"],         // Spécifie où trouver les définitions de type.
+    "lib": ["ES6"],                                 // Inclut les bibliothèques nécessaires pour votre cible.
+    "sourceMap": true                               // Génère des fichiers source maps pour faciliter le débogage.
+  },
+  "include": [
+    "src/**/*.ts",                                   // Inclut tous les fichiers TypeScript dans le dossier src.
+    "src/types/**/*.d.ts" ],
+  "exclude": [
+    "node_modules",                                 // Exclut le dossier node_modules de la compilation.
+    "dist"                                          // Exclut le dossier dist de la compilation.
+  ]
+}
